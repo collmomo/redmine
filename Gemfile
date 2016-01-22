@@ -88,6 +88,11 @@ else
   warn("Please configure your config/database.yml first")
 end
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
 group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
